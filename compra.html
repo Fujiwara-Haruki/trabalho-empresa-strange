@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comprar produto</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="header">
+        <nav class="header-details">
+            <!--menu-->
+            <ul class="menu">
+                <li><img class="logo" src="./img/logo.png" alt="Logo da empresa"></li>
+                <li class="home"><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="formulario.html">Mande-nos seu contato</a></li>
+                <li><a href="blog.html">Nosso blog</a></li>
+            </ul>
+            
+        </nav>
+
+        <!--lado direito menu-->
+        <nav class="header-details">
+            <a href="perfil.html"><img class="perfil" src="./img/perfil.png"></a>
+            <a href="perfil.html"><img class="perfil2" src="./img/perfil2.png"></a>
+        </nav>
+    </header>
+
+    <!--página-->
+    <section >
+        <div class="meio_maior">
+            <h1>Formulário de Compra</h1> <br/>
+            <h3 class="texto">Preencha o formulário abaixo para adiquirir o produto que deseja</h3>
+
+            <!--formulário-->
+          <form class="form" action="compra_ok.html" method="post">
+
+            <label><h3>Nome:</h3></label>
+            <input class="input_not_button" type="text" required="required" placeholder="digite aqui"><br/>
+
+            <label><h3>Endereço:</h3></label>
+            <input class="input_not_button" type="text" required="required" placeholder="digite aqui">
+
+            <label><h3>Quantidade:</h3></label>
+            <input class="input_not_button" type="number" required="required" placeholder="digite aqui"><br/>
+
+            <label><h3>Forma de Pagamento:</h3></label>
+            <input name="radio" class="input_radio" type="radio" required="required">Pix 
+            <input name="radio" class="input_radio" type="radio" required="required">Crédito
+            <input name="radio" class="input_radio" type="radio" required="required">Débito <br/>
+
+
+            <input class="button" type="submit">
+          </form>
+           
+        </div>
+
+      
+    </section> <br/><br/><br/>
+
+    <!--rodapé-->
+    <footer class="footer">
+        <p class="telefone">Telefone: (84) 8791-9427 / Instagram:</p>
+        <a href="https://www.instagram.com/strange_empresa_ficticia/" target="_blank"><img class="insta" src="./img/insta.png"></a>
+        <a href="https://www.instagram.com/strange_empresa_ficticia/" target="_blank"><img class="insta2" src="./img/insta2.png"></a>
+    </footer>
+    
+</body>

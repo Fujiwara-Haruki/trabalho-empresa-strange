@@ -1,0 +1,305 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*variável ---------------------------------------------*/
+:root{
+    --cor_menu: #85C1E9;
+    --altura_header: 65px;
+    --altura_footer: 50px;
+}
+ 
+/*cabeçalho-------------------------------------*/
+.header{
+    background-color: var(--cor_menu);
+    padding: 2px 10px;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    height: var(--altura_header);
+}
+
+
+.menu li{
+    display: inline-block;
+    padding: 2px 5px;
+    text-decoration: none;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+    /*Menu bonitinho*/
+
+    .menu li a:hover{
+        background-color:#334d94;
+        color:#d4faf7
+    }
+
+/*Página-----------------------------------------------------------------*/
+
+body{
+    background-image: url(./img/back_index.png);
+    background-size: 100%;
+
+   
+}
+
+section{
+    min-height: calc(100vh - var(--altura_header) - var(--altura_footer) - var(--altura_footer));
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    color:#d9fdc8;
+    font-size: 30px;
+}
+
+.texto{
+    text-align: center;
+    color:#85C1E9
+}
+
+.conteudo{
+    font-size: 20px;
+    color:#d4faf7;
+    text-align: justify;
+}
+
+.escolher_foto{
+    color:#334d94;  
+}
+
+.meio{
+    background-color:#334d94;
+    margin-top: 50px;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 10px 10px;
+    border-radius: 3px;
+    
+}
+
+.meio_maior{
+    background-color:#334d94;
+    margin-top: 50px;
+    margin-right: 18%;
+    margin-left: 18%;
+    padding: 10px 10px;
+    border-radius: 3px;
+    
+}
+
+.meio_borboleta{
+    text-align: center;
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+
+.perfil_photo{
+    min-height: 300px;
+    text-align: center;
+}
+
+/*formulário---------------------------------------------*/
+.form{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: auto;
+    background-color:#85C1E9;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+label{
+    color:#334d94;
+}
+
+#area{
+    height: 100px;
+}
+
+.input_not_button{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    background-color:#d9fdc8;
+    color:#101e44;
+    padding: 5px;
+}
+
+.input_radio{
+    height: 25px;
+    font-size: 20px;
+   
+}
+
+.button{
+    padding: 5px;
+    background-color:#257397;
+    color:#d4faf7;
+    cursor:grab;
+}
+
+.div_max{
+    text-align: center;
+}
+
+.perfil_photo{
+    background-color:#85C1E9;
+    border-radius: 5px;
+    min-height: 340px;
+}
+
+/*Rodapé---------------------------------------------------*/
+.telefone{
+    display: inline-block;
+    padding: 2px 20px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: var(--altura_footer);
+    background-color: #85C1E9;
+    text-align: center;
+
+    font-size: 20px;
+}
+
+/*Imagens-----------------------------------------*/
+.logo{
+    height:auto;
+    width: 110px;
+}
+
+.butterfly{
+    height: auto;
+    width: 260px;
+}
+
+.butterfly:hover{
+    height: auto;
+    width: 300px;
+}
+
+.perfil, .perfil2{
+    height: auto;
+    width: 39px;
+    
+    position: absolute;
+    top: 26px;
+    left: 95%;
+    padding: 5px 5px
+}
+
+.insta, .insta2{
+    height: auto;
+    width: 39px;
+    bottom: 5px;
+    padding:5px 5px;
+
+    position: absolute;
+    padding: 5px,5px;
+
+    display:inline-block;
+}
+
+.insta2{
+    opacity: 0;
+}
+
+.insta2:hover{
+    opacity: 1;
+    background-color:#334d94;
+}
+
+/*Fazer mudar a imagem quando passa o mouse por cima do perfil*/
+
+.perfil2{
+    opacity: 0;
+}
+
+/*passar mouse por cima do perfil*/
+.perfil2:hover{
+    background-color:#334d94;
+    opacity: 1;
+}
+
+.max, .trem{
+    height: 250px;
+}
+
+.filial{
+    height: 300px;
+}
+
+/*perfil--------------------------------------------------------*/
+
+  .foto {
+    position: absolute;
+    height: 170px;
+    border-radius: 50%;
+    display: none;
+  }
+
+#foto_1{
+    display: block;
+}
+
+#hunter:checked ~ #foto_2{
+    display: block;
+}
+
+#twilight:checked ~ #foto_3{
+    display: block;
+}  
+ 
+#nimona:checked ~ #foto_4{
+    display: block;
+}
+
+#freddy:checked ~ #foto_5{
+    display: block;
+}
+
+/*icons------------------------------------*/
+#carrinho{
+    color:#d9fdc8;
+}
+
+/*Produtos---------------------------------------------------------------------------------------------------------------*/
+#p{
+    display: inline-block;
+}
+
+
+/*imagens*/
+.cd, .cd2, .caneca, .cd3, .cd4, .shirt, .shirt2{
+    height: auto;
+    width: 150px;
+    vertical-align: middle;
+}
+

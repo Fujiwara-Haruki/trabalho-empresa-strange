@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strange forms</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="header">
+        <nav class="header-details">
+            <!--menu-->
+            <ul class="menu">
+                <li><img class="logo" src="./img/logo.png" alt="Logo da empresa"></li>
+                <li class="home"><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="formulario.html">Mande-nos seu contato</a></li>
+                <li><a href="blog.html">Nosso blog</a></li>
+            </ul>
+            
+        </nav>
+
+        <!--lado direito menu-->
+        <nav class="header-details">
+            <a href="perfil.html"><img class="perfil" src="./img/perfil.png"></a>
+            <a href="perfil.html"><img class="perfil2" src="./img/perfil2.png"></a>
+        </nav>
+    </header>
+
+    <!--página-->
+    <section >
+        <div class="meio_maior">
+            <h1>Mande-nos seu Contato!</h1> <br/>
+            <h3 class="texto">Preencha o formulário abaixo para que possamos entrar em contato com você</h3>
+
+            <!--formulário-->
+          <form class="form" action="form_ok.html" method="post">
+
+            <label><h3>Nome:</h3></label>
+            <input class="input_not_button" type="text" required="required" placeholder="digite aqui"><br/>
+
+            <label><h3>Telefone:</h3></label>
+            <input class="input_not_button" type="tel" required="required" placeholder="(XX)X XXXX-XXXX">
+
+            <label><h3>E-mail:</h3></label>
+            <input class="input_not_button" type="email" required="required" placeholder="exemplo@exemplo.com"><br/>
+
+            <label><h3>Mensagem (opicional):</h3></label>
+            <textarea class="input_not_button" id="area" style="resize:none" placeholder="digite aqui"></textarea><br/>
+
+            <input class="button" type="submit">
+          </form>
+           
+        </div>
+
+      
+    </section> <br/><br/><br/>
+
+    <!--rodapé-->
+    <footer class="footer">
+        <p class="telefone">Telefone: (84) 8791-9427 / Instagram:</p>
+        <a href="https://www.instagram.com/strange_empresa_ficticia/" target="_blank"><img class="insta" src="./img/insta.png"></a>
+        <a href="https://www.instagram.com/strange_empresa_ficticia/" target="_blank"><img class="insta2" src="./img/insta2.png"></a>
+    </footer>
+    
+</body>
